@@ -32,26 +32,46 @@ This activity reinforces:
 // ❌ Original Code (Before Refactoring)
 // ============================================
 
+// Function to greet a user
+function greetUser(name) {
+   console.log("Welcome, " + name + "!");
+}
+
+// Function to calculate the sum of two numbers
+function calculateSum(num1, num2) {
+   return num1 + num2;
+}
+
+// Function to calculate the product of two numbers
+function calculateProduct(num1, num2) {
+   return num1 * num2;
+}
+
+// Function to print names from a list
+function printNames(names) {
+   console.log("Names in the list:");
+   for (let i = 0; i < names.length; i++) {
+       console.log(names[i]);
+   }
+}
+
 // Script 1 - Greeting multiple users
-console.log("Welcome, Alice!");
-console.log("Welcome, Bob!");
-console.log("Welcome, Charlie!");
+greetUser("Alice");
+greetUser("Bob");
+greetUser("Charlie");
 
 // Script 2 - Sum calculation
 let num1 = 5, num2 = 10;
-let sum = num1 + num2;
-console.log("The sum of 5 and 10 is " + sum);
+let sum = calculateSum(num1, num2);
+console.log("The sum of " + num1 + " and " + num2 + " is " + sum);
 
 // Script 3 - Product calculation
-let product = num1 * num2;
-console.log("The product of 5 and 10 is " + product);
+let product = calculateProduct(num1, num2);
+console.log("The product of " + num1 + " and " + num2 + " is " + product);
 
 // Script 4 - Print names from a list
 let names = ["Alice", "Bob", "Charlie"];
-console.log("Names in the list:");
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
-}
+printNames(names);
 
 /*
 ===========================================
